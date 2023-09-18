@@ -60,5 +60,3 @@
 #     print("no common elemnts")
 
 
-#2
-# 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
