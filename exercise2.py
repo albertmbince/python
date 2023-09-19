@@ -59,4 +59,46 @@
 # else:
 #     print("no common elemnts")
 
+# b="not:-First letter of the month should be capital"
+# print(b)
+# a=str(input("enter the month:"))
+# D={31:["January","March","May","July","August","October","December"],30:["April","June","September","November"],28:["february"]}
 
+# if a in D[31]:
+#     print("31 days")
+        
+# elif a in D[30]:
+#     print("30 days")
+# elif a in D[28]:
+#     print("28 days")
+# else:
+#     print("enter the correct Month")
+
+# a=int(input("enter the limit"))
+# list1=[]
+# i=0
+# while i<a:
+#     n=int(input("enter the number:"))
+#     list1.append(n)
+#     i=i+1
+# print(list1)
+# j=1
+# large=list1[0]
+# while j<a:
+#     if list1[j]>large:
+#         large=list1[j]
+#     j=j+1
+# print("largest number is:",large)
+# p=5
+# for i in range(0,5):
+#     for j in range(0,p):
+#         print(end="  ")
+#     p=p-1
+#     for k in range(0,i+1):
+#         print("*",end=" ")
+#     print()
+n = 5
+for i in range(n, 0, -1):
+    for j in range(1, i + 1):
+        print("*", end=" ")
+    print("")
