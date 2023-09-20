@@ -97,8 +97,66 @@
 #     for k in range(0,i+1):
 #         print("*",end=" ")
 #     print()
-n = 5
-for i in range(n, 0, -1):
-    for j in range(1, i + 1):
-        print("*", end=" ")
-    print("")
+# n = 5
+# for i in range(n, 0, -1):
+#     for j in range(1, i + 1):
+#         print("*", end=" ")
+#     print("")
+
+# for i in range(1,5):
+#     for j in range(1,i+1):
+#         print(j,end=" ")   
+#     print()
+    
+# for i in range(2,5):
+#     for j in range(2,i*2,2):
+#         print(j,end=" ")   
+#     print()
+# k=1
+# for i in range(1,5):
+#     for j in range(1,i+1):
+#         print(k,end=" ")
+#         k=k+1 
+#     print()
+
+# k=1
+# for i in range(1,5):
+#     for j in range(1,i+1):
+#         print(k+1,end=" ")
+#         k=k+2
+#     print()
+    
+# k=1
+# for i in range(1,5):
+#     for j in range(1,i+1):
+#         print(k,end=" ")
+#         k=k+2
+#     print()
+    
+# k=1
+# for i in range(1,5):
+#     for j in range(1,i*2,2):
+#         print(j,end=" ")
+#     print()
+
+# k=1
+# for i in range(1,5):
+#     for j in range(1,i*2):
+#         print(k,end="  ")
+#         k=k+2
+#     print()
+    
+# k=1
+# for i in range(1,5):
+#     for j in range(1,i*2):
+#         print(k,end="  ")
+#         k=k+1
+#     print()
+
+k=1
+for i in range(1,5):
+    for j in range(2,i*4,2):
+        print(j,end="  ")
+    # j=j+2
+    print()
+    
