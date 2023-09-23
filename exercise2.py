@@ -267,6 +267,44 @@
 #     if i not in l2:
 #         l2.append(i)
 # print("the unique elemnts are:",l2)
-# l1=[5,2,3,4,1,3,4,2,3]
+ 
+ 
+ #pattern printing
+ # l1=[5,2,3,4,1,3,4,2,3]
 # for i in range(0,len(l1)):
 #     print("*"*l1[i])
+
+# l=[1,2,3,4,5]
+# b=int(input("enter choice:"))
+# for i in range(len(l)):
+    
+# print(c)
+
+
+
+#vowels
+
+# b=str(input("enter the string="))
+# v=0
+# for i in b:
+#     if (i=="a"or i=="e" or i=="i" or i=="o" or i=="u" or i=="A" or i=="E" or i=="I" or i=="O" or i=="U"):
+#         v=v+1
+
+# print("the number of vowels are=",v)    
+
+#3 Palindrome
+# b=str(input("enter the string="))
+# if(b==b[::-1]):
+#     print("palindrome")
+# else:
+#     print("not palindrome")
+
+#4
+b=str(input("enter the string:"))
+for i in b:
+      if (i==i[::-1]):
+        b.replace(i,"@")
+print(b.replace(i,"@"))       
+    
+    
+
