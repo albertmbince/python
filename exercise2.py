@@ -220,3 +220,53 @@
 #           print("*", end=' ') 
 #     print("")
 
+# l1=[1,2,3,4,5,6]
+# l2=[6,7,8,9,10,11]
+# l3=[]
+# l4=[]
+# for i in l1:
+#     if i%2!=0:
+#         l3.append(i)
+    
+# # print(l3)
+# for j in l2:
+#      if j%2==0:
+#          l4.append(j)
+     
+# print(l3)
+# print(l4)
+
+
+#3
+# l1=[]
+# a=int(input("enter limit:"))
+# for i in range(a):
+#     b=str(input("enter ="))
+#     l1.append(b)
+# print(l1)
+# for i in range(0,len(l1)):
+#     if i%2==0:
+#         print(l1[i])
+
+#4
+# a=int(input('enter number'))
+# b=int(input('enter number'))
+# for i in range(a,b+1):
+#     if i%2==0:
+#         print(i)
+
+#2
+# l1=[]
+# l2=[]
+# a=int(input("enter limit:"))
+# for i in range(a):
+#     b=str(input("enter ="))
+#     l1.append(b)
+# print(l1)
+# for  i in l1:
+#     if i not in l2:
+#         l2.append(i)
+# print("the unique elemnts are:",l2)
+# l1=[5,2,3,4,1,3,4,2,3]
+# for i in range(0,len(l1)):
+#     print("*"*l1[i])
