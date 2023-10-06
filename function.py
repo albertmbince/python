@@ -266,14 +266,13 @@ list()
     
     
 #     l=["apple","banana","cherry","date"]
-#     for x in l :
-#         for y in l:
-#             for j in x:
-#                 for q in y:
-                    
-#                   if j==q:
-#                    print(x,y)   
-                         
+#     l1=l.copy()
+#     for i in range(len(l)):
+#         for j in range(len(l1)):
+#             for char in l[i]:
+#                 if char in l1[j]:
+#                     print(l[i],l1[j])
+#                     break
 # words()
 
 
@@ -293,3 +292,68 @@ list()
 #         if b%2!=0:
 #                 print(i,j)
 # number()
+
+# def A():
+#     s=str(input("enter string:"))
+#     b=2
+#     a=0
+#     d=0
+#     l=[]
+#     e=0
+#     for i in range(0,3):
+#         c=s[a:b]
+#         l.append(c)
+#         b=b+4+d
+#         a=a+2+e
+#         d=d+2
+#         e=e+2
+#     print(l)
+# A()
+
+# def python():
+#     l=[]
+#     n=str(input('enter string='))
+#     for i in n:
+#            l.append(i)
+#     l.insert(1,".")
+#     l.insert(6,".")
+#     l[3:5]=["."]
+    
+#     print("".join(l))
+          
+# python()
+
+# def sentence():
+#     n=str(input('enter sentence:'))
+#     print(len(n.split()))
+# sentence()
+
+
+def sen():
+    n=str(input('enter sentence:'))
+    n.split()
+    l=[]
+    l1=[]
+    d=1
+    e=0
+    c=len(l[e])
+    b=len(l[d])
+    # b=len(i)
+    for i in n.split():
+        l.append(i)
+    for j in l:
+        if c>b:
+            d=d+1
+        else:
+            pass   
+    print(l1)
+    
+    
+            
+    # print("the longest word is:",l[-1])  
+    
+      
+    
+        
+        
+sen()
