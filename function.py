@@ -329,31 +329,67 @@ list()
 # sentence()
 
 
-def sen():
-    n=str(input('enter sentence:'))
-    n.split()
-    l=[]
-    l1=[]
-    d=1
-    e=0
-    c=len(l[e])
-    b=len(l[d])
-    # b=len(i)
-    for i in n.split():
-        l.append(i)
-    for j in l:
-        if c>b:
-            d=d+1
-        else:
-            pass   
-    print(l1)
+# def sen():
+#     n=str(input('enter sentence:'))
+#     n.split()
+#     l=[]
+#     l1=[]
+#     d=1
+#     e=0
+#     c=len(l[e])
+#     b=len(l[d])
+#     # b=len(i)
+#     for i in n.split():
+#         l.append(i)
+#     s=max(n,key:len)
     
-    
-            
-    # print("the longest word is:",l[-1])  
+#     print(l1)
+
     
       
     
         
         
-sen()
+# sen()
+
+print("1.create list\n2.add elements\n3.Replace element\n4.remove elements\n5.exit")
+
+list=[3,2,5,4]
+def create():
+    l=[]
+    for i in range(0,4):
+        n=int(input("enter number="))
+        l.append(n)
+    print('the created list is ',l)
+def add():
+    a=int(input("enter the elemnt:"))
+    list.append(a)
+    print("the new list is",list)
+def replace():
+    replace=int(input("enter position to be replaced="))
+    v=int(input("enter elemnt to be replaced="))
+    list.remove(replace)
+    list.insert(replace,v)
+    print("the new list after replacement =",list)
+      
+def remove():
+    Remove=int(input('enter the elment to be removed='))
+    list.remove(Remove)
+    print("the new list after removal is",list)
+while True:
+    choice=int(input("enter your choice:"))
+    if choice==1:
+        create()
+        
+    elif choice==2:
+        add()
+    elif choice==3:
+        replace()
+    elif choice==4:
+        remove()
+    elif choice==5:
+        print('exit out of operation')
+        break
+    else:
+        print("enter the correct choice")
+        
