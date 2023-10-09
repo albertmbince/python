@@ -352,44 +352,95 @@ list()
         
 # sen()
 
-print("1.create list\n2.add elements\n3.Replace element\n4.remove elements\n5.exit")
+# print("1.create list\n2.add elements\n3.Replace element\n4.remove elements\n5.exit")
 
-list=[3,2,5,4]
-def create():
-    l=[]
-    for i in range(0,4):
-        n=int(input("enter number="))
-        l.append(n)
-    print('the created list is ',l)
-def add():
-    a=int(input("enter the elemnt:"))
-    list.append(a)
-    print("the new list is",list)
-def replace():
-    replace=int(input("enter position to be replaced="))
-    v=int(input("enter elemnt to be replaced="))
-    list.remove(replace)
-    list.insert(replace,v)
-    print("the new list after replacement =",list)
+# list=[3,2,5,4]
+# def create():
+#     l=[]
+#     for i in range(0,4):
+#         n=int(input("enter number="))
+#         l.append(n)
+#     print('the created list is ',l)
+# def add():
+#     a=int(input("enter the elemnt:"))
+#     list.append(a)
+#     print("the new list is",list)
+# def replace():
+#     replace=int(input("enter position to be replaced="))
+#     v=int(input("enter elemnt to be replaced="))
+#     list.remove(replace)
+#     list.insert(replace,v)
+#     print("the new list after replacement =",list)
       
-def remove():
-    Remove=int(input('enter the elment to be removed='))
-    list.remove(Remove)
-    print("the new list after removal is",list)
-while True:
-    choice=int(input("enter your choice:"))
-    if choice==1:
-        create()
+# def remove():
+#     Remove=int(input('enter the elment to be removed='))
+#     list.remove(Remove)
+#     print("the new list after removal is",list)
+# while True:
+#     choice=int(input("enter your choice:"))
+#     if choice==1:
+#         create()
         
-    elif choice==2:
-        add()
-    elif choice==3:
-        replace()
-    elif choice==4:
-        remove()
-    elif choice==5:
-        print('exit out of operation')
-        break
-    else:
-        print("enter the correct choice")
+#     elif choice==2:
+#         add()
+#     elif choice==3:
+#         replace()
+#     elif choice==4:
+#         remove()
+#     elif choice==5:
+#         print('exit out of operation')
+#         break
+#     else:
+#         print("enter the correct choice")
+    
+# l=[]  
+
+# for k in range(0,4):
+#     n=int(input("enter number="))
+#     l.append(n)
+# print("the entered list is",l)
+# target=int(input("enter the target="))
+# for i in l:
+#     for j in l:
+#         if i+j==target:
+#             a=l.index(i)
+#             b=l.index(j)
+#             print("the position of numbers are",a,"and",b)
         
+
+l1=[]
+l2=[]
+l3=[]
+for k in range(0,4):
+    n=int(input("enter number="))
+    l1.append(n)
+print("the first list is",l1)
+for k in range(0,4):
+    n=int(input("enter number="))
+    l2.append(n)
+c=1
+print('the second list is',l2)
+
+for k in range(0,4):
+    n=int(input("enter number="))
+    l3.append(n)
+print('the second list is',l3)
+
+
+print("the first list is",l1)
+print('the second list is',l2)
+print('the second list is',l3)
+target=int(input("enter the target="))
+
+print("the position of numbers are;")
+for i in l1:
+    for j in l2:
+        for m in l3:
+          if i+j+m==target:
+            a=l1.index(i)
+            b=l2.index(j)
+            c=l3.index(m)
+            print("\nin list1=",a,"\nand in list2=",b,"\n and in list3=",c)
+            c=c+1
+        
+    
