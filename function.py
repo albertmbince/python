@@ -408,39 +408,132 @@ list()
 #             print("the position of numbers are",a,"and",b)
         
 
-l1=[]
-l2=[]
-l3=[]
-for k in range(0,4):
-    n=int(input("enter number="))
-    l1.append(n)
-print("the first list is",l1)
-for k in range(0,4):
-    n=int(input("enter number="))
-    l2.append(n)
-c=1
-print('the second list is',l2)
+# l1=[]
+# l2=[]
+# l3=[]
+# for k in range(0,4):
+#     n=int(input("enter number="))
+#     l1.append(n)
+# print("the first list is",l1)
+# for k in range(0,4):
+#     n=int(input("enter number="))
+#     l2.append(n)
+# c=1
+# print('the second list is',l2)
 
-for k in range(0,4):
-    n=int(input("enter number="))
-    l3.append(n)
-print('the second list is',l3)
+# for k in range(0,4):
+#     n=int(input("enter number="))
+#     l3.append(n)
+# print('the second list is',l3)
 
 
-print("the first list is",l1)
-print('the second list is',l2)
-print('the second list is',l3)
-target=int(input("enter the target="))
+# print("the first list is",l1)
+# print('the second list is',l2)
+# print('the second list is',l3)
+# target=int(input("enter the target="))
 
-print("the position of numbers are;")
-for i in l1:
-    for j in l2:
-        for m in l3:
-          if i+j+m==target:
-            a=l1.index(i)
-            b=l2.index(j)
-            c=l3.index(m)
-            print("\nin list1=",a,"\nand in list2=",b,"\n and in list3=",c)
-            c=c+1
+# print("the position of numbers are;")
+# for i in l1:
+#     for j in l2:
+#         for m in l3:
+#           if i+j+m==target:
+#             a=l1.index(i)
+#             b=l2.index(j)
+#             c=l3.index(m)
+#             print("\nin list1=",a,"\nand in list2=",b,"\n and in list3=",c)
+#             c=c+1
         
     
+    
+# import random
+# l=[1,2,3,5,7,8]
+# n=random.choice(l)
+# print(n)
+
+
+# l=["s","p","r"]
+# n=random.choice(l)
+# c=0
+# u=0
+# while True:
+#     user=str(input("enter your choice="))
+#     print("computer choosed:",n)
+#     if user==n:
+#         print("tie")
+#     elif user=="r" and n=="s":
+#         print("yimport randomou won")
+#         u=u+1
+#     elif user=="r" and n=="p":
+#         print("computer wons")
+#         c=c+1
+#     elif user=="s" and n=="p":
+        
+#         print("you won")
+#         u=u+1print("")
+        
+#     elif user=='s' and n=="r":
+#         print("computer wons")
+#         c=c+1
+#     elif user=="p" and n=="s":
+#         print("computer won")
+#         c=c+1
+#     elif user=="p" and n=="r":
+        
+#         print("you won")
+#         u=u+1
+#     elif user=="quit":
+#         print("game over")
+#         print("computer scored;",c)
+#         print("your score:",u)
+#         if u>c:
+#             print("you won the game")
+#         elif u==c:
+#             print("the result is tie")
+#         else:
+#             print("computer won the game")
+        
+#         break
+#     else:
+#         print('invalid input')
+
+import random
+l=["lemon","crows","mango"]
+n=random.choice(l)
+chance=7
+g=["_","_","_","_","_"]
+while True:
+    guess=str(input("enter the letter:"))
+    if guess in n:
+        print("your guess was right")
+        k=n.index(guess)
+        print(k)
+        chance=chance-1
+        g[k]=guess
+        print(g)
+        j="".join(g)
+        if j in l:
+            print("you guessed the correct word",j)
+            print("you won the game \n remaining chances are",chance)
+            print("game over")
+            break
+        
+        
+        
+    elif chance==0:
+        print('your chances are done')
+        
+        m="".join(g)
+        print("what u entered is:",m)
+        print("the correct answer was",n)
+        print("game over")
+        break
+    elif guess=="quit":
+        print("game over,better luck next time")
+        print("the correct answer was",n)
+        
+        break
+    else:
+        if guess not in n:
+            print("that letter is wrong")
+            chance=chance-1
+        
