@@ -713,62 +713,195 @@
 #         print('exit')
 #         break
 
-class restaurant():
-    def __init__(self,menu,orders,tables):
-        self.menu=menu
-        self.orders=orders
-        self.tables=tables
-        # menu=["Biriyani","rice","porotta"]
-        # orders=[]
-        # tables=[1,2,3,4,5,6,7]
+# class restaurant():
+#     def __init__(self,menu,orders,tables):
+#         self.menu=menu
+#         self.orders=orders
+#         self.tables=tables
         
-    def add(self):
-        menuitem=str(input('enter the item:'))
-        self.menu.append(menuitem)
-        print("the new menu is=",self.menu)
-    def booktable(self):
-        print("The available tables are:",self.tables)
-        table=int(input('enter the table of your choice='))
-        if table not in self.tables:
-            print('enter the right table number')
-        else:
-            print("the table number",table,"is booked for you")
-            print("the table number",table,"is booked for u")
-    def order(self):
-        print("Available menu is",self.menu)
-        print('please give your order')
-        order=str(input('enter your order:'))
-        if order in self.menu:
-            print(order,"have been ordered by you")
-        else:
-            print("please select an order from the given menu")
-    def display(self):
-        print(menu)
+        
+#     def add(self):
+#         menuitem=str(input('enter the item:'))
+#         self.menu.append(menuitem)
+#         print("the new menu is=",self.menu)
+#     def booktable(self):
+#         print("The available tables are:",self.tables)
+#         table=int(input('enter the table of your choice='))
+#         if table not in self.tables:
+#             print('enter the right table number')
+#         else:
+#             print("the table number",table,"is booked for you")
+#             print("the table number",table,"is booked for u")
+#     def order(self):
+#         print("Available menu is",self.menu)
+#         print('please give your order')
+#         order=str(input('enter your order:'))
+#         if order in self.menu:
+#             print(order,"have been ordered by you")
+#         else:
+#             print("please select an order from the given menu")
+#     def display(self):
+#         print(menu)
 
 
-l=[]
-menu=["Biriyani","rice","porotta"]
-orders=[]
-tables=[1,2,3,4,5,6,7]
-print("Hiii!!")
-print(" please opt your choices\n1.Display menu\n2.Book your table\n3.Add to menu\n4.give an order\n5.quit")
-while True:
-     obj=restaurant(menu,orders,tables)       
+# l=[]
+# menu=["Biriyani","rice","porotta"]
+# orders=[]
+# tables=[1,2,3,4,5,6,7]
+# print("Hiii!!")
+# print(" please opt your choices\n1.Display menu\n2.Book your table\n3.Add to menu\n4.give an order\n5.quit")
+# while True:
+#      obj=restaurant(menu,orders,tables)       
         
-     choice=int(input("enter the choice="))
-     if choice==1:
-        print('the menu avialble is\n',obj.display())   
-     elif choice==2:
-         obj.booktable()
-     elif choice==4:
-         obj.order()
-     elif choice==3:
-         obj.add()
-     elif choice==5:
-         print("Thank You for choosing us..")
-         break
-     else:
-         print("enter the correct choice")
+#      choice=int(input("enter the choice="))
+#      if choice==1:
+#         print('the menu avialble is\n',obj.display())   
+#      elif choice==2:
+#          obj.booktable()
+#      elif choice==4:
+#          obj.order()
+#      elif choice==3:
+#          obj.add()
+#      elif choice==5:
+#          print("Thank You for choosing us..")
+#          break
+#      else:
+#          print("enter the correct choice")
+
+
+
+
+# inhertance
+
+# class zoo():
+#     def animals():
+#         print("animals")
          
+# class animal(zoo):
+#     # def mammals(self):
+#     #  super().animals()
+#     pass
+     
+    
+# # class mammal(zoo):
+    
+# # class bird(zoo):
+
+# # class fish(zoo):
+# obj=animal()
+# print(obj.animals)
+           
+
+
+# class vehicle():
+#     def model(self):
+#         self.name='cars'
+#         self.year=2000
+#         self.color="blue"
+        
+    
+# class car(vehicle):
+#     def details(self):
+#         super().model()
+#         print("This vehicle belongs to",self.name)
+        
+
+# obj=car()
+# obj.details()
+
+
+# import program1
+# program1.module()
+
+
+#class shape with drvd clses circle and rectangle
+# class shape():
+#     def area(self,l,b,r):
+#         self.rectangle=l*b
+#         self.circle=3.18*r*r
+# class rectangle(shape):
+#     def rect(self):
+#         super().area(5,6,7)
+#         print("the area of rectangle is",self.rectangle)
+# class circle(shape):
+#     def circ(self):
+#         super().area(5,6,7)
+#         print("the area of circle is",self.circle)
+# obj=rectangle()
+# obj.rect()
+# c=circle()
+# c.circ()
+
+
+#hierarchy of animals 
+# class hierarchy():
+#     def speak(self):
+#         self.cow="booing"
+#         self.cat='meow'
+#         self.dog="bark"
+# class cow(hierarchy):
+#     def boo(self):
+#         super().speak()
+#         print("the cow speaks in the format",self.cow)
+# class cat(hierarchy):
+#     def meow(self):
+#         super().speak()
+#         print("the cat speaks in the format",self.cat)
+# class dog(hierarchy):
+#     def bark(self):
+#         super().speak()
+#         print("the dog speaks in the format",self.dog)
+# c=cow()
+# m=cat()
+# d=dog()
+# c.boo()
+# m.meow()
+# d.bark()
+
+#cars ,electic cars,gasoline
+# class car():
+#     def start_engine(self):
+#         print("the car runs on either petrol or diesel")
+# class electriccar(car):
+#     def electric(self):
+#      super().start_engine()
+#     def start_engine(self):
+#         print("the car runs using battery power")
+# class gasolinecar(car):
+#     def gasoline(self):
+#      super().start_engine()
+#     def start_engine(self):
+#         print("the car runs using gasoline")
         
         
+# c=electriccar()
+# c.electric()
+# c.start_engine()
+# g=gasolinecar()
+# g.gasoline()
+# g.start_engine()
+
+class Employee():
+    def calculate_salary(self,perdaywage,present,leave):
+        self.manager=(perdaywage*present)-(leave*perdaywage)
+        self.developer=(perdaywage*present)-(leave*perdaywage)
+class manager(Employee):
+    def salary(self):
+        g=int(input("daily wage of manager="))
+        w=int(input("number of working days he present="))
+        l=int(input("number of working days he absent="))
+        
+        super().calculate_salary(g,w,l)
+        print("The monthly salary of manager is",self.manager)
+class developer(Employee):
+    def salary(self):
+        g=int(input("daily wage of developer="))
+        w=int(input("number of working days he present="))
+        l=int(input("number of working days he absent="))
+        super().calculate_salary(g,w,l)
+        print("The monthly salary of developer is",self.developer)
+M=manager()
+D=developer()
+M.salary()
+D.salary()
+    
