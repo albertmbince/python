@@ -270,9 +270,9 @@
  
  
  #pattern printing
- # l1=[5,2,3,4,1,3,4,2,3]
-# for i in range(0,len(l1)):
-#     print("*"*l1[i])
+ # l1=[5,2,3,4,1,3,4,2,3]for j in len(l) and i in len(l2):
+      if i==j:
+          l3.append(i)
 
 # l=[1,2,3,4,5]
 # b=int(input("enter choice:"))
@@ -300,11 +300,75 @@
 #     print("not palindrome")
 
 #4
-b=str(input("enter the string:"))
-for i in b:
-      if (i==i[::-1]):
-        b.replace(i,"@")
-print(b.replace(i,"@"))       
+# b=str(input("enter the string:"))
+# for i in b:
+#   if (i==i[::-1]):
+#      b.replace(i,"@")
+#   else:
+#     continue
+# print(b.replace(i,"@"))
+     
+
     
-    
+# a=int(input("enetr the diner number:"))
+# n=5
+# while n<=5:
+#      a=(a+1)%5
+#      n=n-1
+# print(a)
+
+
+# l=[5,1,5,1,1,1]
+# for i in l:
+#   print("*"*i)
+
+# n=5
+# for i in range(1,n+1):
+#     for j in range(n,0,-1):             
+#       if(i==j)or (j==n) or (i==1):
+#         print('*', end = '  ')
+#       else:
+#         print(' ', end = '  ')
+#     print()
+
+
+# for i in range(65,68):
+#   for j in range(65,i+1):
+#    print(chr(i),end=" ") 
+#    i=i-1
+#   print()
+
+#number of days walking in leap year
+# year=int(input("enter year:"))
+# if year%4==0:
+#   print("the number of kilometres he walked =",366*10)
+# else:
+#   print("the number of kilometres he walked =",365*10)
+
+maths=int(input("enter mark of maths:"))
+chemistry=int(input("enter mark of chemistry:"))
+physics=int(input("enter mark of physics:"))
+mark=maths+chemistry+physics
+if maths>=55 and chemistry>=50 and physics>=50:
+  print("student passed the exam ")
+  if mark>=140:
+    print("student passed")
+  else:
+    print("failed")
+else:
+  print("  student failed")
+  if maths<=55:
+    print("failed in maths")
+  else:
+    print("passed in maths")
+  if chemistry<=50:
+    print("failed in chemistry")
+  else:
+    print("passed in chemistry")
+  if physics<=50:
+    print("failed in physics")
+  else:
+    print("passed in physics")
+
+
 

@@ -881,27 +881,111 @@
 # g.gasoline()
 # g.start_engine()
 
-class Employee():
-    def calculate_salary(self,perdaywage,present,leave):
-        self.manager=(perdaywage*present)-(leave*perdaywage)
-        self.developer=(perdaywage*present)-(leave*perdaywage)
-class manager(Employee):
-    def salary(self):
-        g=int(input("daily wage of manager="))
-        w=int(input("number of working days he present="))
-        l=int(input("number of working days he absent="))
+# class Employee():
+#     def calculate_salary(self,perdaywage,present,leave):
+#         self.manager=(perdaywage*present)-(leave*perdaywage)
+#         self.developer=(perdaywage*present)-(leave*perdaywage)
+# class manager(Employee):
+#     def salary(self):
+#         g=int(input("daily wage of manager="))
+#         w=int(input("number of working days he present="))
+#         l=int(input("number of working days he absent="))
         
-        super().calculate_salary(g,w,l)
-        print("The monthly salary of manager is",self.manager)
-class developer(Employee):
-    def salary(self):
-        g=int(input("daily wage of developer="))
-        w=int(input("number of working days he present="))
-        l=int(input("number of working days he absent="))
-        super().calculate_salary(g,w,l)
-        print("The monthly salary of developer is",self.developer)
-M=manager()
-D=developer()
-M.salary()
-D.salary()
+#         super().calculate_salary(g,w,l)
+#         print("The monthly salary of manager is",self.manager)
+# class developer(Employee):
+#     def salary(self):
+#         g=int(input("daily wage of developer="))
+#         w=int(input("number of working days he present="))
+#         l=int(input("number of working days he absent="))
+#         super().calculate_salary(g,w,l)
+#         print("The monthly salary of developer is",self.developer)
+# M=manager()
+# D=developer()
+# M.salary()
+# D.salary()
     
+    
+# import re
+# txt="cat mat pat rat"
+# x=re.findall(r"[cpr]at",txt)
+# print(x)
+
+# import re
+# txt="1 12 123 1234 12345"
+# x=re.findall("\d",txt)
+# print(x)
+
+
+# import re
+# txt="https://www.washingtonpost.com/news/ww/2016/09/02/"
+# x=re.findall("[0-9][0-9][0-9][0-9]",txt)
+# y=re.findall("\d{2}",txt)
+# print("the year is",x)
+# print(y)
+
+
+# import re
+# txt="the quick brown frog jumps over the lazy frog"
+# x=re.findall(r"\w\w\w\w+",txt)
+# print(x)
+
+# import re
+# password=str(input("enter password:"))
+# x=re.findall(r"^[a-zA-Z 0-9 @#!$%^&*]*",password)
+# if x:
+#     print("yes ")
+# else:
+#     print("no this is not the required format of the password") 
+
+# import re
+# email=str(input("enter email:"))
+# x=re.findall(r"^[a-z  0-9 @ ]* [gmail].com|in",email)
+# if x:
+#     print("yes ")
+# else:
+#     print("no this is not the required format of the email") 
+    
+# l=[] 
+# import re
+# para="I asjdsjkadjk I sdkskdks I dsdsdsds I jhdjshjdhsj I djhddmdldl I hjhjh"
+# j=re.findall("I",para)
+# l.append(j)
+# # print(j)
+# print("the number of occurences of I in paragraph is:",len(j))
+
+
+# import re
+# d=str(input('enter the date:'))
+# x=re.search(r"^(0[1-9]|[12]\d|3[01])-(0[1-9]|1[012])-([\d][\d][\d][\d])$",d)
+# if x:
+#     print("yes")
+# else:
+#     print("n0")
+
+print("1.create file\n2.read file\n3.append file\n4.write file\n5.remove file")
+while True:
+    choice=int(input("enter the choice:"))
+    if choice==1:
+        f=open("my.txt","x")
+    elif choice==2:
+        f=open('demofile.txt',"r")
+        print(f.read())
+    elif choice==3:
+        f=open("demofile.txt","a")
+        f.write("Iam still a student")
+        f=open("demofile.txt","r")
+        print(f.read())
+    elif choice==4:
+        f=open("demofile.txt","w")
+        f.write("The name says it all..")
+        f=open("demofile.txt","r")
+        print(f.read())
+    elif choice==5:
+        import os
+        
+        os.remove("my.txt")
+    else:
+        break
+        
+        
